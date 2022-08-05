@@ -5,7 +5,7 @@
     "description": "An extension to remind you when you seat too long, So that to avoid hemorrhoid.",
     "action": {
         "default_popup": "./popup/popup.html",
-        "default_icon": "seat_reminder.png"
+        "default_icon": "1.png"
     },
     "permissions": [
         "notifications"

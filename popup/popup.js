@@ -1,5 +1,8 @@
 const open = document.getElementById("confirm");
 const close = document.getElementById("close");
+// error: because at this moment the 'time' is null
+// TODO: store time config permanently
+// const time = document.getElementById('time').value;
 var id_of_setTimeout;
 open.addEventListener("click", function () {
     clearTimeout(id_of_setTimeout);
@@ -14,6 +17,7 @@ close.addEventListener("click", function () {
     clearTimeout(id_of_setTimeout);
 });
 
+// TODO: create a new tab.
 function timedCount() {
     const time = document.getElementById('time').value;
     console.log("time: ",time);
@@ -22,8 +26,8 @@ function timedCount() {
         {
             type: 'basic',
             title: '久坐提醒！！！',
-            message:  '久坐提醒！！！',
-            iconUrl: '../seat_reminder.png',
+            message:  '快起身活动吧！！！',
+            iconUrl: '../1.png',
         }
     );
     // TODO: change it to minute
